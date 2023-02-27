@@ -1,0 +1,310 @@
+.nav-ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nam {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav {
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: skyblue;
+  height: 100%;
+  width: 100%;
+  height: 4rem;
+
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: 4rem;
+}
+
+#nav-ul {
+  display: flex;
+  gap: 2rem;
+}
+
+#nav-ul a {
+  text-decoration: none;
+  color: rgb(252, 250, 250);
+}
+
+.mobile {
+  display: none;
+  color: rgb(8, 6, 6);
+}
+
+#nav-ul li:hover {
+  border-bottom: 2px solid black;
+  background-color: black;
+}
+
+
+
+.footer {
+  height: 8vh;
+  text-align: center;
+  width: 100%;
+  background-color: skyblue;
+}
+
+.inputbox {
+  display: block;
+  margin: 25px;
+  padding: 7px;
+  width: 300px;
+  border: 2px solid black;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.btn {
+  margin: 25px;
+  padding: 10px;
+  width: 150px;
+  background-color: rgb(16, 230, 177);
+  bottom: 2px solid black;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.nav-right {
+  text-align: right;
+}
+
+.logo {
+  width: 45px;
+  float: left;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 3px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.invalid-input {
+  color: red;
+  margin-top: -20px;
+  display: block;
+  margin-left: 10px;
+  font-size: 15px;
+
+}
+
+.product-list {
+  margin-top: 3rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 21rem;
+}
+
+.product-list ul li {
+  display: inline-block;
+  width: 158px;
+  height: 40px;
+  border: 2px solid black;
+  font-size: 15px;
+  text-align: center;
+}
+
+.pln {
+  margin-bottom: 2rem;
+}
+
+.updatest {
+  background-color: #333;
+  margin-left: 12px;
+  border: 2px solid rgb(10, 21, 83);
+  color: #fff;
+  text-decoration: none;
+}
+
+.delest {
+  background-color: red;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.setinput {
+  padding: 9px 30px;
+  border-radius: 9px;
+  margin-bottom: 1rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  background-color: #fafafa;
+  height: 100vh;
+}
+
+.title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.subtitle {
+  margin: 10px 0 30px;
+  font-size: 18px;
+  color: #777;
+}
+
+.cta-container {
+  display: flex;
+}
+
+.cta {
+  display: block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #00bfff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btnn {
+  color: aqua;
+  background-color: black;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background-color: #00a5e5;
+}
+
+@media screen and (max-width:545px) {
+  .login {
+    background-color: rgba(8, 10, 34, 0.781);
+  }
+
+}
+
+@media screen and (max-width:792px) {
+  .product-list ul li {
+    width: 7rem;
+    height: 2rem;
+  }
+}
+
+@media screen and (max-width:560px) {
+  .product-list ul li {
+    width: 4.5rem;
+    height: 3.5rem;
+  }
+
+  .delest {
+    font-size: 12px;
+    margin-left: 0.5rem;
+    margin-bottom: 5px;
+  }
+
+  .updatest {
+    font-size: 10px;
+  }
+
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+@media screen and (max-width:500px) {
+  .nam {
+    position: fixed;
+    top: 17px;
+    left: 12px;
+  }
+
+
+  #nav-ul {
+    /* position: sticky; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    background-color: rgb(184, 26, 92);
+    color: #333;
+    height: 100vh;
+    width: 50vw;
+    font-size: 22px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    transition: 0.4s ease-in-out;
+  }
+
+  #nav-ul.active {
+    right: 0;
+  }
+
+  .mobile {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 99;
+
+  }
+
+}
+
+@media screen and (max-width:510px) {
+  .nav-right {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.gra {
+  padding-top: 9rem;
+  width: 20rem;
+  margin: auto;
+  padding-bottom: 7rem;
+}
